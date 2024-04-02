@@ -32,20 +32,20 @@ public class Product {
         return name;
     }
 
-    public void setName() {
+    public void setName(String name) {
         this.name = name;
     }
     public String getBrand() {
         return brand;
     }
-    public void setBrand() {
+    public void setBrand(String brand) {
         this.brand = brand;
     }
     public BigDecimal getPrice() {
         return price.setScale(2, RoundingMode.HALF_EVEN);
     }
 
-    public void setPrice() {
+    public void setPrice(BigDecimal price) {
         if (price == null) {
             price = BigDecimal.ZERO;
         }
@@ -54,7 +54,7 @@ public class Product {
     public BigDecimal getVat() {
         return vat;
     }
-    public void setVat() {
+    public void setVat(BigDecimal vat) {
         this.vat = vat;
     }
     public String getFullName() {
