@@ -71,7 +71,7 @@ public class Product {
     }
 
     public String productDetails() {
-        return String.format("Code Product: %s, Name: %s, Brand %s, Net Price: %.2f€, Vat: %.0f%%, Total Price: %.2f€",
+        return String.format("Code Product: %s, Name: %s, Brand: %s, Net Price: %.2f€, Vat: %.0f%%, Total Price: %.2f€",
                 getFullName(), name, brand, price, vat, getFullPrice());
     }
 
