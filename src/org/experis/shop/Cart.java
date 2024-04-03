@@ -60,11 +60,13 @@ public class Cart {
                     Headphones headphones = new Headphones(name, brand, new BigDecimal(price), new BigDecimal(vat), color, isWireless);
                     cart[i] = headphones;
                     break;
+                default:
+                    break;
             }
         }
 
-        for (int i = 0; i < cart.length; i++) {
-            System.out.println(cart[i].productDetails());
+        for (Product product : cart) {
+            System.out.println(product.productDetails());
         }
 
         System.out.println(Arrays.toString(cart));

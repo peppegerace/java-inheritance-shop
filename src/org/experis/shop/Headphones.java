@@ -30,4 +30,10 @@ public class Headphones extends Product {
     public void setWireless(boolean wireless) {
         isWireless = wireless;
     }
+
+    // METODI
+    @Override
+    public String productDetails(){
+        return super.productDetails() + ", Colore: " + color + ", Wireless: " + (isWireless ? "Sì" : "No");
+    }
 }

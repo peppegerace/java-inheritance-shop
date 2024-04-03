@@ -29,5 +29,8 @@ public class Smartphone extends Product {
     }
 
     // METODI
-
+    @Override
+    public String productDetails(){
+        return super.productDetails() + ", Codice IMEI: " + imei + ", Memoria: " + memorySize + " GB";
+    }
 }

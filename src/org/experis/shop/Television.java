@@ -26,4 +26,10 @@ public class Television extends Product{
     public void setSmart(boolean smart) {
         isSmart = smart;
     }
+
+    // METODI
+    @Override
+    public String productDetails(){
+        return super.productDetails() + ", Dimensione: " + screenSize + ", Smart TV: " + (isSmart ? "Sì" : "No");
+    }
 }
